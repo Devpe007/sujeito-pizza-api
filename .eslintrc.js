@@ -20,5 +20,6 @@ module.exports = {
     'import/extensions': 'off',
     'import/prefer-default-export': 'off',
     'arrow-body-style': 'off',
+    'no-extra-semi': 'off',
   },
 };
