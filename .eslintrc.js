@@ -22,5 +22,6 @@ module.exports = {
     'arrow-body-style': 'off',
     'no-extra-semi': 'off',
     'class-methods-use-this': 'off',
+    camelcase: 'off',
   },
 };
