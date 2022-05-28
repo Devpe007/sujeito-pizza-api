@@ -16,6 +16,7 @@ import { ListByCategoryController } from '../controllers/product/ListByCategoryC
 import { CreateOrderController } from '../controllers/order/CreateOrderController';
 import { RemoveOrderController } from '../controllers/order/RemoveOrderController';
 import { SendOrderController } from '../controllers/order/SendOrderController';
+import { ListOrdersController } from '../controllers/order/ListOrdersController';
 
 import { AddItemController } from '../controllers/order/item/AddItemController';
 import { RemoveItemController } from '../controllers/order/item/RemoveItemController';
@@ -47,6 +48,8 @@ router.post('/product', isAuthenticated, upload.single('file'), new CreateProduc
 router.get('/category/product', isAuthenticated, new ListByCategoryController().handle);
 
 // -- ROTAS ORDER --
+
+router.get('/orders', isAuthenticated, new ListOrdersController().handle);
 
 router.post('/order', isAuthenticated, new CreateOrderController().handle);
 router.post('/order/add', isAuthenticated, new AddItemController().handle);
