@@ -23,5 +23,6 @@ module.exports = {
     'no-extra-semi': 'off',
     'class-methods-use-this': 'off',
     camelcase: 'off',
+    'prefer-destructuring': 'off',
   },
 };
